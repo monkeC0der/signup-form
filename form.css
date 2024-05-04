@@ -2,3 +2,12 @@ body {
     background-image: url(bg-image.webp);
     background-size: cover;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logoContainer--logo--img {
+    width: 5rem;
+}
