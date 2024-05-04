@@ -1,11 +1,23 @@
 body {
     background-image: url(bg-image.webp);
     background-size: cover;
+    margin: 0;
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.logoContainer {
+    flex-basis: 30vw;
+    background-color: rgb(000 000 120 / 50%);
+}
+
+.formContainer {
+    flex-basis: 60vw;
+    background-color: rgb(000 000 120 / 50%);
 }
 
 .logoContainer--logo--img {
