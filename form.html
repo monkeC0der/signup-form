@@ -3,7 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
@@ -20,40 +20,46 @@
             <div class="formContainer--intro">
                 <h4 class="formContainer--intro--text">
                     Welcome to the Monkey Hotel, situated in the beautiful Kenyan National Park! This is the perfect
-                    place to unwind from the busy work life - with monkey friends! Sign up now to get on your way!
+                    place to unwind from the busy work life - with monkey friends! <br><br>Sign up now to get on your way!
                 </h4>
             </div>
             <div class="formContainer--form">
                 <h3 class="formContainer--form--title">Climb into the trees!</h3>
-                <label for="" class="formContainer--form--label">First Name
-                    <input type="text" class="formContainer--form--input">
-                </label>
-                <label for="" class="formContainer--form--label">Last Name
-                    <input type="text" class="formContainer--form--input">
-                </label>
-                <label for="" class="formContainer--form--label">Email
-                    <input type="text" class="formContainer--form--input">
-                </label>
-                <label for="" class="formContainer--form--label">Phone Number
-                    <input type="text" class="formContainer--form--input">
-                </label>
-                <label for="" class="formContainer--form--label">Password
-                    <input type="text" class="formContainer--form--input">
-                </label>
-                <label for="" class="formContainer--form--label">Confirm Password
-                    <input type="text" class="formContainer--form--input">
-                </label>
+                <form action="" class="formContainer--form--form">
+                    <ul>
+                        <div class="left">
+                            <li>
+                                <label for="firstName"><span>First name: </span></label><input id="firstName" type="text" />
+                            </li>
+                            <li>
+                                <label for="email"><span>Email: </span></label><input id="email" type="text">
+                            </li>
+                            <li>
+                                <label for="password"><span>Password: </span></label><input id="password" type="text">
+                            </li>
+                        </div>
+                        <div class="right">
+                            <li>
+                                <label for="lastName"><span>Last name: </span></label><input id="lastName" type="text">
+                            </li>
+                            <li>
+                                <label for="phone"><span>Phone: </span></label><input id="phone" type="text">
+                            </li>
+                            <li>
+                                <label for="confirmPassword"><span>Confirm password: </span></label><input id="confirmPassword" type="text">
+                            </li>
+                        </div>
+                    </ul>
+                </form>
             </div>
             <div class="formContainer--footer">
                 <button type="submit" class="formContainer--form--submitButton">
                     Create Account
                 </button>
-                <span>
-                    <p class="formContainer--footer--alreadyAccountMsg">
-                        Already have an account?
-                    </p>
-                    <a href="http://" class="formContainer--footer--loginLink">Log in</a>
+                <div class="formContainer--footer--accountAlreadyMsg">
+                <span>Already have an account? <a href="http://" class="formContainer--footer--loginLink">Log in</a>
                 </span>
+            </div>
             </div>
         </div>
     </div>
